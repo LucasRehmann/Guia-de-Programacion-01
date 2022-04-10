@@ -11,19 +11,13 @@ public class Ejercicio09 : MonoBehaviour
     public string persona1;
     public string persona2;
     public string persona3;
+
     // Start is called before the first frame update
     void Start()
     {
-        int total = cap1 + cap2 + cap3;
-
-        int por1 = (100 / total * cap1);
-        int por2 = (100 / total * cap1);
-        int por3 = (100 / total * cap1);
-
-        Debug.Log(por1);
-        Debug.Log("Nombre: " + persona1 + ", capital aportado: $" + cap1 + ", Porcentaje del capital: %" + por1 + ", Monto total aportado: $" + total);
-        Debug.Log("Nombre: " + persona2 + ", capital aportado: $" + cap2 + ", Porcentaje del capital: %" + por2 + ", Monto total aportado: $" + total);
-        Debug.Log("Nombre: " + persona3 + ", capital aportado: $" + cap3 + ", Porcentaje del capital: %" + por3 + ", Monto total aportado: $" + total);
+        Debug.Log("Nombre: " + persona1 + ", capital aportado: $" + cap1 + ", Porcentaje del capital: %" + (100 * cap1 / (cap1 + cap2 + cap3)) + ", Monto total aportado: $" + (cap1 + cap2 + cap3));
+        Debug.Log("Nombre: " + persona2 + ", capital aportado: $" + cap2 + ", Porcentaje del capital: %" + (100 * cap2 / (cap1 + cap2 + cap3)) + ", Monto total aportado: $" + (cap1 + cap2 + cap3));
+        Debug.Log("Nombre: " + persona3 + ", capital aportado: $" + cap3 + ", Porcentaje del capital: %" + (100 * cap3 / (cap1 + cap2 + cap3)) + ", Monto total aportado: $" + (cap1 + cap2 + cap3));
     }
 
     // Update is called once per frame
