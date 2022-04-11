@@ -11,7 +11,6 @@ public class Ejercicio15 : MonoBehaviour
     bool estaEnAmbos = false;
     bool noEstaEnNinguno = false;
 
-    int undig;
     int impar;
 
     // Start is called before the first frame update
@@ -19,7 +18,7 @@ public class Ejercicio15 : MonoBehaviour
     {
         impar = numero % 2;
 
-        if (numero < 10 && undig > -10)
+        if (numero < 10 && numero > -10)
         {
             estaEnA = true;
             Debug.Log("El bool estaEnA es true");
